@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Para kay Jasmin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Animate.css — entrance animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- AOS — scroll-triggered reveal animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="hearts" aria-hidden="true"></div>
+    <div class="container">
+        <!-- Welcome Section -->
+        <div class="welcome-section story-section" id="welcomeSection">
+            <p class="birthday-eyebrow">ISANG ESPESYAL NA ARAW PARA SA'YO</p>
+            <h1>Happy Birthday, Lovee</h1>
+            <div class="birthday-art" aria-hidden="true">
+                <span class="birthday-spark birthday-spark-one"></span>
+                <span class="birthday-spark birthday-spark-two"></span>
+                <span class="birthday-spark birthday-spark-three"></span>
+                <svg class="birthday-cake" viewBox="0 0 240 190" role="presentation">
+                    <path class="cake-shadow" d="M37 163h166" />
+                    <path class="cake-bottom" d="M50 119h140v38a12 12 0 0 1-12 12H62a12 12 0 0 1-12-12z" />
+                    <path class="cake-bottom-icing" d="M50 129c13-13 18 12 31 0s18 12 31 0 18 12 31 0 18 12 31 0 12 4 16 3v14H50z" />
+                    <path class="cake-top" d="M70 77h100v42H70z" />
+                    <path class="cake-top-icing" d="M70 88c10-11 16 10 26 0s16 10 26 0 16 10 26 0 16 8 22 2v14H70z" />
+                    <path class="candle candle-one" d="M91 48v29" />
+                    <path class="candle candle-two" d="M120 39v38" />
+                    <path class="candle candle-three" d="M149 48v29" />
+                    <path class="candle-flame flame-one" d="M91 43c-8-8 5-15 0-23 13 9 10 18 0 23z" />
+                    <path class="candle-flame flame-two" d="M120 34c-8-8 5-15 0-23 13 9 10 18 0 23z" />
+                    <path class="candle-flame flame-three" d="M149 43c-8-8 5-15 0-23 13 9 10 18 0 23z" />
+                    <path class="candle-smoke smoke-one" d="M91 39c-7-7 7-8 1-15" />
+                    <path class="candle-smoke smoke-two" d="M120 30c-7-7 7-8 1-15" />
+                    <path class="candle-smoke smoke-three" d="M149 39c-7-7 7-8 1-15" />
+                    <circle class="cake-decoration" cx="82" cy="111" r="3" />
+                    <circle class="cake-decoration" cx="120" cy="111" r="3" />
+                    <circle class="cake-decoration" cx="158" cy="111" r="3" />
+                </svg>
+            </div>
+            <p class="welcome-message">Happy Birthday sa bebe kong palagi akong inaaway.</p>
+            <div class="candle-interaction">
+                <p class="candle-instructions">Click the button to turn on your camera and microphone, then blow out the candle.</p>
+                <div class="camera-preview" id="cameraPreview" hidden>
+                    <video id="birthdayCamera" autoplay muted playsinline aria-label="Camera preview"></video>
+                    <span class="camera-preview-label">Live preview</span>
+                </div>
+                <div class="candle-controls">
+                    <button class="candle-control-button" id="startBlowDetection" type="button">Turn on camera</button>
+                    <button class="candle-control-button manual-extinguish-button" id="manualExtinguish" type="button">Blow out candle</button>
+                    <button class="candle-control-button stop-camera-button" id="stopCamera" type="button" hidden>Turn off camera</button>
+                </div>
+                <p class="candle-status" id="candleStatus" role="status" aria-live="polite"></p>
+            </div>
+        </div>
+
+        <!-- Timeline Section -->
+        <div class="timeline-section story-section" id="timelineSection" hidden>
+            
+            <h2>Stories</h2>
+
+            <div class="timeline-track">
+                <div class="timeline-entry">
+                    <div class="tl-dot"></div>
+                    <div class="tl-body">
+                        <span class="tl-label">2020</span>
+                        <h3>Simula ng Lahat</h3>
+                        <p>Binati mo ako nung birthday ko. Sino ba naman mag-eexpect na yung "YO BIRTHDAY MO?", dito na pala magsisimula yung 5 years natin.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-entry">
+                    <div class="tl-dot"></div>
+                    <div class="tl-body">
+                        <span class="tl-label">January 2021</span>
+                        <h3>Tayo Na</h3>
+                        <p>5 years na ngayon. Sobrang bilis lang pero ang dami nang nangyari. Away, kulitan, tampo.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-entry">
+                    <div class="tl-dot"></div>
+                    <div class="tl-body">
+                        <span class="tl-label">Cinema Date</span>
+                        <h3>Nood ng Sine</h3>
+                        <p>Popcorn, Fries, Takoyaki na bawal pala ipasok HAHAHHAHA, tapos nood lang. Yun din yung first time kong manood ng Sine HAHAHAHA.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-entry">
+                    <div class="tl-dot"></div>
+                    <div class="tl-body">
+                        <span class="tl-label">Mga Dates sa Plasa</span>
+                        <h3>Tambay Lang</h3>
+                        <p>Meryenda tapos kwentuhan lang. Wala naman masyadong ginagawa pero masaya. HAHAHHA</p>
+                    </div>
+                </div>
+
+                <div class="timeline-entry tl-entry-now">
+                    <div class="tl-dot"></div>
+                    <div class="tl-body">
+                        <span class="tl-label">Ngayon</span>
+                        <h3>Ngayon</h3>
+                        <p>Andito pa rin tayo kahit andami nating pinagdaanan. Away, bati,tapos away ulit. Sana habang tumatagal, mas marami pa tayong ganito hehe.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reasons I Love You Section -->
+        <div class="reasons-section story-section" id="reasonsSection" hidden>
+            <p class="reasons-eyebrow">REASONS</p>
+            <h2>Bakit Lab Lab Kita</h2>
+
+            <ol class="reasons-list">
+                <li class="reason-row">
+                    <span class="reason-idx">01</span>
+                    <div class="reason-text">
+                        <h3>Kapag kasama / kachat kita</h3>
+                        <p>Kapag pagod ako, stress, badtrip, tapos kasama o kachat. Parang chill na lahat.</p>
+                    </div>
+                </li>
+
+                <li class="reason-row">
+                    <span class="reason-idx">02</span>
+                    <div class="reason-text">
+                        <h3>Hardworking</h3>
+                        <p>Sobrang sipag mo. Gusto mo malinis palagi. Nakakahiya naman sayo kasi sadot ako HAHHAHA.</p>
+                    </div>
+                </li>
+
+                <li class="reason-row">
+                    <span class="reason-idx">03</span>
+                    <div class="reason-text">
+                        <h3>Cat Lover</h3>
+                        <p>Lab na lab mo mga pusa mo, mas love mo pa sila kesa sa akin. Minsan nga mas priority mo pa sila sa akin, jk. HAHAHAHA.</p>
+                    </div>
+                </li>
+
+                <li class="reason-row">
+                    <span class="reason-idx">04</span>
+                    <div class="reason-text">
+                        <h3>Ml Player kano</h3>
+                        <p>Minsan competitive ka masyado pero okay lang, tapos sisihan tayong dalawa HAHAHHA.</p>
+                    </div>
+                </li>
+            </ol>
+        </div>
+
+        <!-- Photos Section -->
+        <div class="photos-section story-section" id="photosSection" hidden>
+
+            <!-- ① Title zone — always above photos -->
+            <div class="collage-header">
+                <p class="collage-eyebrow animate__animated animate__fadeIn">— Para kay Jasmin —</p>
+                <h2 class="collage-title animate__animated animate__jackInTheBox">
+                    <span class="collage-title-happy">Happy</span>
+                    <span class="collage-title-birthday">Birthday!</span>
+                </h2>
+            </div>
+
+            <!-- ② Polaroid scatter zone — clearly below title -->
+            <div class="collage-scatter">
+
+                <!-- Row 1: 3 photos -->
+                <div class="polaroid polaroid--1"
+                     data-aos="fade-up" data-aos-delay="0" data-aos-duration="600">
+                    <div class="polaroid-img">
+                        <img src="pictures/picture_1.jpg" alt="Jasmin" loading="lazy">
+                    </div>
+                    <span class="polaroid-caption">Jasmin ♥</span>
+                </div>
+
+                <div class="polaroid polaroid--2"
+                     data-aos="zoom-in" data-aos-delay="120" data-aos-duration="600">
+                    <div class="polaroid-img">
+                        <img src="pictures/picture_2.jpg" alt="Jasmin" loading="lazy">
+                    </div>
+                    <span class="polaroid-caption">Jasmin ♥</span>
+                </div>
+
+                <div class="polaroid polaroid--3"
+                     data-aos="fade-up" data-aos-delay="240" data-aos-duration="600">
+                    <div class="polaroid-img">
+                        <img src="pictures/picture_3.jpg" alt="Jasmin" loading="lazy">
+                    </div>
+                    <span class="polaroid-caption">Jasmin ♥</span>
+                </div>
+
+                <!-- Row 2: 3 photos offset for scatter feel -->
+                <div class="polaroid polaroid--4"
+                     data-aos="fade-up" data-aos-delay="160" data-aos-duration="600">
+                    <div class="polaroid-img">
+                        <img src="pictures/picture_4.jpg" alt="Jasmin" loading="lazy">
+                    </div>
+                    <span class="polaroid-caption">Jasmin ♥</span>
+                </div>
+
+                <div class="polaroid polaroid--5"
+                     data-aos="zoom-in" data-aos-delay="280" data-aos-duration="600">
+                    <div class="polaroid-img">
+                        <img src="pictures/picture_5.jpg" alt="Jasmin" loading="lazy">
+                    </div>
+                    <span class="polaroid-caption">Jasmin ♥</span>
+                </div>
+
+                <div class="polaroid polaroid--6"
+                     data-aos="fade-up" data-aos-delay="400" data-aos-duration="600">
+                    <div class="polaroid-img">
+                        <img src="pictures/picture_6.jpg" alt="Jasmin" loading="lazy">
+                    </div>
+                    <span class="polaroid-caption">Jasmin ♥</span>
+                </div>
+
+            </div><!-- /collage-scatter -->
+
+            <!-- Lightbox -->
+            <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+                <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close photo">✕</button>
+                <button class="lightbox-prev"  id="lightboxPrev"  type="button" aria-label="Previous photo">‹</button>
+                <div class="lightbox-img-wrap">
+                    <img class="lightbox-img" id="lightboxImg" src="" alt="">
+                </div>
+                <button class="lightbox-next"  id="lightboxNext"  type="button" aria-label="Next photo">›</button>
+            </div>
+        </div>
+
+        <!-- Final Message Section -->
+        <div class="final-section story-section" id="letterSection" hidden>
+            <div class="final-header">
+                <p class="section-kicker">JUST FOR YOU</p>
+                <h2>May Letter Ako Para Sa'yo</h2>
+            </div>
+
+            <!-- Password gate -->
+            <div class="letter-gate" id="letterGate">
+                <p class="gate-hint">Kelan anniversary natin? <span>(MM/DD/YYYY)</span></p>
+                <div class="gate-input-row">
+                    <input
+                        class="gate-input"
+                        id="gateInput"
+                        type="text"
+                        placeholder="MM/DD/YYYY"
+                        maxlength="10"
+                        autocomplete="off"
+                        inputmode="numeric"
+                        aria-label="Anniversary date"
+                    >
+                    <button class="gate-submit" id="gateSubmit" type="button">Open</button>
+                </div>
+                <p class="gate-error" id="gateError" aria-live="polite"></p>
+            </div>
+
+            <!-- Letter (hidden until correct password) -->
+            <div class="letter-content" id="letterContent" aria-live="polite" hidden>
+                <p>Jas,</p>
+                <p>Happy Birthday Bebe Ko!</p>
+                <p>Hindi ako magaling magsulat ng letter, pero ittry ko. 5 years na pala tayo ngayon. Ang tagal na pala natin pero parang ang bilis ng panahon.</p>
+                <p>Kahit lagi mo akong inaaway, nandito pa rin ako. Kasi totoo naman eh, mas okay buhay ko pag kasama kita yieeee. Minsan kapag badtrip o naiinis ako, presence mo lang sapat na HAHAHA, parang kumalma na lahat. Di ko alam kung bakit o paano pero ganun talaga pag kasama kita (sheeesh).</p>
+                <p>Salamat kasi masipag ka, malinis ka sa bahay (tas ako sadot haha). Salamat kasi mahal mo yung mga pusa kahit minsan mas priority mo pa sila kesa sakin. Salamat kasi ikaw ka.</p>
+                <p>Sana magtagal pa tayo hehe. Sana marami pa tayong birthday na icecelebrate, marami pang sine, marami pang date, marami pang tambay sa plasa. Sana mas marami pang away... jk HAHAHHAHA, mas marami pang taon na magkasama tayo.</p>
+                <p>Yun lang. More birthdays to come. Nandito lang ako palagi. Ready sa away, ready sa tampo, ready sa lahat basta ikaw. Labyooo!!</p>
+                <p class="signature">Brady</p>
+            </div>
+        </div>
+
+        <nav class="section-navigation" aria-label="Page sections">
+            <button class="section-nav-button previous-section-button" id="previousSection" type="button" aria-label="Previous section" disabled>&larr; Back</button>
+            <div class="section-progress" id="sectionProgress" aria-label="Story progress">
+                <button class="progress-dot active" type="button" aria-label="Go to section 1" data-index="0"></button>
+                <button class="progress-dot" type="button" aria-label="Go to section 2" data-index="1"></button>
+                <button class="progress-dot" type="button" aria-label="Go to section 3" data-index="2"></button>
+                <button class="progress-dot" type="button" aria-label="Go to section 4" data-index="3"></button>
+                <button class="progress-dot" type="button" aria-label="Go to section 5" data-index="4"></button>
+            </div>
+            <button class="section-nav-button next-section-button" id="nextSection" type="button" aria-label="Next section">Next &rarr;</button>
+        </nav>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- Birthday song -->
+    <audio id="bdaySong" src="music/bday_song.mp3" preload="auto" loop></audio>
+    <script src="animation.js"></script>
+</body>
+</html>
